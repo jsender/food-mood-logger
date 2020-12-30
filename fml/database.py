@@ -1,6 +1,5 @@
 from importlib import resources
 from pathlib import Path
-from datetime import datetime
 
 __all__ = ['execute_schema', 'check_schema', 'queries']
 
@@ -31,8 +30,8 @@ def execute_schema(connection):
 
 
 def check_schema(connection):
-    food_table = 'CREATE TABLE food'
-    mood_table = 'CREATE TABLE mood'
+    food_table = 'CREATE TABLE food('
+    mood_table = 'CREATE TABLE mood('
     food_present = mood_present = False
 
     # List all table schemas in the database

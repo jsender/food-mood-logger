@@ -9,11 +9,8 @@ __version__ = resources.read_text('fml', 'VERSION')
 
 __all__ = ['argparser', 'main']
 
-__spec__.submodule_search_locations = ['resources/schema']
-
 
 def argparser():
-    """Food mood logger `argparse.ArgumentParser` constructor."""
     parser = argparse.ArgumentParser('fml',
                                      description="""
     fml (Food-Mood Logger) is a food-mood relation manual logging tool used
@@ -56,6 +53,5 @@ def argparser():
         type=str,
         action='store',
         help='Mood and its score in scale 1-100.')
-
 
     return parser
