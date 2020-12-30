@@ -1,0 +1,13 @@
+build
+_build
+venv*
+dist
+.vscode
+*.egg-info
+*.egg
+*.py[cod]
+__pycache__
+*.so
+*~
+*.log
+TODO

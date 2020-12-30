@@ -1,0 +1,6 @@
+-r fml/requirements.txt
+
+# Development environment dependencies
+flake8
+pydocstyle
+pylint
